@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="Weather.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="weather.js"></script>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="location">
+        <div class="location-title">
+          <h1 class="locationTitle">Loading</h1>
+          <img class="nowIcon" src="/img/icons/clear.png" alt="Weather-Icon" />
+        </div>
+        <p class="rain">Rainfall:</p>
+        <p class="degrees">5°</p>
+      </div>
+      <div class="time">
+        <p class="clock">0:00</p>
+      </div>
+      <div class="sevenDayForecast">
+        <h2 class="sevenDayTitle">7-day Forecast</h2>
+        <div class="daily">
+          <p class="daily-title">Monday</p>
+          <div class="dailyIcon">
+            <img
+              src="img/icons/clear.png"
+              alt="Weather-Icon"
+              class="7dayIcon"
+            />
+            <p class="7dayWeather">Sunny</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 20°</p>
+            <p class="min">Min 13°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Tuesday</p>
+          <div class="dailyIcon">
+            <img src="img/icons/snow.png" alt="Weather-Icon" class="7dayIcon" />
+            <p class="7dayWeather">Snow</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 5°</p>
+            <p class="min">Min -2°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Wednesday</p>
+          <div class="dailyIcon">
+            <img
+              src="img/icons/heavy-rain.png"
+              alt="Weather-Icon"
+              class="7dayIcon"
+            />
+            <p class="7dayWeather">Rainy</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 17°</p>
+            <p class="min">Min 7°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Thursday</p>
+          <div class="dailyIcon">
+            <img
+              src="img/icons/partly-cloudy.png"
+              alt="Weather-Icon"
+              class="7dayIcon"
+            />
+            <p class="7dayWeather">Cloudy</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 19°</p>
+            <p class="min">Min 15°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Friday</p>
+          <div class="dailyIcon">
+            <img
+              src="img/icons/overcast.png"
+              alt="Weather-Icon"
+              class="7dayIcon"
+            />
+            <p class="7dayWeather">Overcast</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 13°</p>
+            <p class="min">Min 8°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Saturday</p>
+          <div class="dailyIcon">
+            <img
+              src="img/icons/storm.png"
+              alt="Weather-Icon"
+              class="7dayIcon"
+            />
+            <p class="7dayWeather">Storm</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 7°</p>
+            <p class="min">Min -1°</p>
+          </div>
+        </div>
+        <div class="daily">
+          <p class="daily-title">Sunday</p>
+          <div class="dailyIcon">
+            <img src="img/icons/fog.png" alt="Weather-Icon" class="7dayIcon" />
+            <p class="7dayWeather">Foggy</p>
+          </div>
+          <div class="dailyMaxMin">
+            <p class="max">Max 2°</p>
+            <p class="min">Min -7°</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="picture"></div>
+      <div class="air">
+        <div class="airHeader">
+          <h2 class="airTitle">Air conditions</h2>
+          <button class="airButton" onclick="showMore()">More</button>
+        </div>
+        <div class="airInfo">
+          <div class="airValues">
+            <p class="airValueTitle">Air pressure</p>
+            <p class="airValueAirpressure">50 hPa</p>
+          </div>
+          <div class="airValues">
+            <p class="airValueTitle">Wind speed</p>
+            <p class="airValueWindspeed">0.2 km/h</p>
+          </div>
+          <div class="airValues">
+            <p class="airValueTitle">Visability</p>
+            <p class="airValueVisability">20m</p>
+          </div>
+          <div class="airValues">
+            <p class="airValueTitle">Humidity</p>
+            <p class="airValueHumidity">1%</p>
+          </div>
+        </div>
+      </div>
+      <div class="todayForecast">
+        <h2 class="dailyForecastTitle">Upcoming Forecast</h2>
+        <div class="hourlyContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
