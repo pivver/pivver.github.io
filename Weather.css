@@ -147,7 +147,7 @@ body {
   grid-column: span 3;
   background-position: center;
   background-size: cover;
-  background-image: url(http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTj00nZ4jElB7gjlGksPfWtmcw7HiwVQnvJlo9DsO6tN5T5SriE8uFj_EdHAPKTGjPr);
+  background-image: url(https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTj00nZ4jElB7gjlGksPfWtmcw7HiwVQnvJlo9DsO6tN5T5SriE8uFj_EdHAPKTGjPr);
 }
 .airHeader {
   display: flex;
