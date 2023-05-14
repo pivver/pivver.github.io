@@ -22,7 +22,7 @@ function getLocation() {
     const long = coords.longitude.toFixed(3);
     // fetch
     fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=AIzaSyBZ5xIfo_guE1wp66IcjlhI1P3uulS7-u4`
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=AIzaSyAMLHy0R-UqXoRHdSp_3r0wWGsQ_-TWIQk`
     )
       .then((response) => {
         return response.json();
